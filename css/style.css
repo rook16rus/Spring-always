@@ -338,3 +338,47 @@ body {
     color: white;
 }
 
+.action {
+    padding-bottom: 263px;
+}
+
+.action-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.action-text-column {
+    width: 400px;
+    margin-right: 78px;
+}
+
+.action-title {
+    font-size: 50px;
+    line-height: normal;
+    letter-spacing: 0.09em;
+
+    margin: 42px 0 58px 0;
+}
+
+.action-text {
+    margin: 58px 0 31px 0;
+}
+
+.action-img-column {
+    width: 697px;
+    position: relative;
+}
+
+.action-img-column::after {
+    content: "";
+
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 27px;
+    top: 22px;
+}
