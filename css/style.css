@@ -382,3 +382,65 @@ body {
     left: 27px;
     top: 22px;
 }
+
+.composition {
+    padding-bottom: 285px;
+}
+
+.composition-wrapper {
+    display: flex;
+}
+
+.composition-img-column {
+    width: 996px;
+    margin-right: 84px;
+    position: relative;
+}
+
+.composition-img-column::after {
+    content: "";
+
+    width: 100%;
+    height: 93%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 27px;
+    top: 3%;
+}
+
+.composition-text-column {
+    width: 619px;
+}
+
+.composition-title {
+    font-size: 50px;
+    line-height: normal;
+    letter-spacing: 0.09em;
+
+    margin: 118px 0 56px 0;
+}
+
+.composition-text {
+    margin: 56px 0 30px 0;
+}
+
+.composition-text-column .button {
+    margin-bottom: 100px;
+}
+
+.composition-list {
+    display: flex;
+    align-items: flex-start;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.composition-item {
+    width: 123px;
+    height: 123px;
+    margin: 0 20px 20px 0;
+}
