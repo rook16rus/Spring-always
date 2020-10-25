@@ -243,6 +243,8 @@ body {
     padding: 0;
     margin: 0 -40px 0 0;
     height: 880px;
+
+    counter-reset: catalog-item-counter;
 }
 
 .catalog-item {
@@ -252,6 +254,34 @@ body {
     padding: 10px 10px 16px;
     border: 1px solid #62464B;
     margin: 0 40px 40px 0;
+
+    position: relative;
+}
+
+.catalog-item::before {
+    counter-increment: catalog-item-counter;
+    content: "0" counter(catalog-item-counter);
+
+    font-family: "Forum", sans-serif;
+    font-size: 20px;
+    line-height: normal;
+
+    position: absolute;
+    top: 50px;
+    left: 33px;
+
+    z-index: 4;
+}
+
+.catalog-item::after {
+    content: "";
+
+    width: 70px;
+    border-top: 2px solid white;
+
+    position: absolute;
+    top: 64px;
+    left: 62px;
 }
 
 .catalog-item-small {
@@ -272,6 +302,19 @@ body {
 
 .catalog-item-biggest {
     min-height: 724px;
+}
+
+.catalog-item-img::before {
+    content: "";
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.catalog-item-img:hover {
+    filter: brightness(40%);
 }
 
 .catalog-item-text {
