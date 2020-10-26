@@ -482,6 +482,7 @@ body {
     height: 199px;
     padding: 10px;
     background-color: black;
+    border-radius: 10px;
 }
 
 .present-content-block {
@@ -534,4 +535,44 @@ body {
 .present-item-big .present-item-text {
     margin: 100px auto 128px ;
     max-width: 285px;
+}
+
+
+.caterer {
+    padding-bottom: 196px;
+}
+
+.caterer-title {
+    text-align: center;
+    margin: 0 0 90px 0;
+}
+
+.caterer-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    width: 1209px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.caterer-item {
+    margin: 0 33px 33px 0;
+}
+
+.caterer-item-small {
+    min-width: 268px;
+    height: 90px;
+}
+
+.caterer-item-medium {
+    width: 370px;
+    height: 122px;
+}
+
+.caterer-item-big {
+    width: 571px;
+    height: 190px;
 }
